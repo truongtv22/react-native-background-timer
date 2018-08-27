@@ -60,7 +60,7 @@ class BackgroundTimer {
   stopBackgroundTimer() {
     this.backgroundListener = null;
     this.stop();
-    clearTimeout(this.backgroundTimer);
+    this.clearTimeout(this.backgroundTimer);
   }
 
   // New API, allowing for multiple timers
